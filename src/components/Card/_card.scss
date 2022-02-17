@@ -1,0 +1,113 @@
+.cards__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 90vw;
+  a {
+    text-decoration: none;
+  }
+}
+
+.card {
+  position: relative;
+  padding: 24px;
+  text-align: center;
+  border-radius: 4px;
+  background: white;
+  background: $gradient;
+  margin: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  color: white;
+  max-width: 348px;
+}
+
+.card__header {
+  img {
+    border-radius: 4px;
+  }
+}
+
+.card__status {
+  position: absolute;
+  right: 36px;
+
+  p {
+    padding: 5px;
+    border-radius: 4px;
+    color: white;
+  }
+  .card__status--alive-badge {
+    background: limegreen;
+  }
+
+  .card__status--dead-badge {
+    background: rgb(201, 2, 2);
+  }
+  .card__status--unknown-bagde {
+    background: grey;
+  }
+}
+
+.cards__list {
+  display: flex;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+.card__footer {
+  h4 {
+    font-size: 24px;
+  }
+
+  p {
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.card__detail {
+  text-align: left;
+
+  h1 {
+    text-align: center;
+  }
+  p {
+    font-weight: 500;
+  }
+  span {
+    font-weight: 400;
+  }
+}
+
+.card--back {
+  background: white;
+  color: black;
+  img {
+    border-radius: 50%;
+  }
+}
+
+.button__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+
+  button {
+    background: black;
+    color: white;
+    border-radius: 4px;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      transition: 0.3s;
+      opacity: 0.8;
+    }
+  }
+}
