@@ -1,5 +1,5 @@
 
-##View Demo:
+## View Demo:
 https://missnisha.github.io/rick-and-morty-react/
 
 
