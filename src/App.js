@@ -10,13 +10,13 @@ import "./scss/App.scss";
 
 function App() {
   return (
-        <Router basename={process.env.PUBLIC_URL}>
-          <Header />
-          <Routes>
-          <Route path="/" element={<Home/>} />
-            <Route path="/:id" element={<CardDetails />} />
-          </Routes>
-        </Router>
+    <Router basename={process.env.PUBLIC_URL}>
+      <Header />
+      <Routes>
+        <Route path="rick-and-morty-react" element={<Home />} />
+        <Route path="/:id" element={<CardDetails />} />
+      </Routes>
+    </Router>
   );
 }
 
